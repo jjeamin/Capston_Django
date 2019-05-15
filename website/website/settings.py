@@ -36,6 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'professor',
+    'student',
 ]
 
 MIDDLEWARE = [
@@ -53,7 +55,10 @@ ROOT_URLCONF = 'website.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates'),],
+        'DIRS': [
+		'/home/jjm/website/student/templates',
+		'/home/jjm/website/login/templates',
+		'/home/jjm/website/professor/templates',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
